@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username:
+    password: 
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+  application:
+    name: jwt-auth
+  h2:
+    console:
+      enabled: true
+#logging:
+#  level:
+#    root: TRACE
+# application.properties
+jwt:
+  secret: ThisIsASecretKeyThisIsASecretKeyThisIsASecretKey
+  expiration: 86400000  # 24 hours in milliseconds
+
